@@ -23,7 +23,7 @@ module "simple_vpc" {
   source  = "app.terraform.io/leomarqueslima/simple_vpc/aws"
   version = "1.0.3"
 
-  az = "us-east-1a"
+  az = "us-east-1b"
   name = "vcs-drive-architecture"
 }
 
