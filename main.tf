@@ -3,7 +3,7 @@ terraform {
 cloud {
     organization = "leomarqueslima"
     workspaces {
-        name = "terraform-aws-simplevpc-module"
+        name = "vcs-driven-hcp"
     }
 }
 
@@ -28,13 +28,13 @@ module "simple_vpc" {
 }
 
 output "vpc_id" {
-  value = module.vpc.vpc_id
+  value = module.simple_vpcvpc.vpc_id
 }
 
 output "public_subnet_id" {
-  value = module.vpc.public_subnet_id
+  value = module.simple_vpc.public_subnet_id
 }
 
 output "private_subnet_id" {
-  value = module.vpc.private_subnet_id
+  value = module.simple_vpc.private_subnet_id
 }
